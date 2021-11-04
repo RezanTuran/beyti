@@ -1,11 +1,12 @@
 import React from 'react';
 import HeroSlider, { Slide, Nav } from 'hero-slider';
+import ImageList from './imageList';
 
 // Images
-const hallstatt = 'https://i.imgur.com/Yszno5e.jpg';
-const hvitserkur = 'https://i.imgur.com/ZBzbir7.jpg';
-const jacksonville = 'https://i.imgur.com/xpeJkkR.jpg';
-const moraineLake = 'https://i.imgur.com/0NAc45h.jpg';
+const hallstatt = ImageList[0].menuTitle;
+const hvitserkur = ImageList[1].menuTitle;
+const jacksonville = ImageList[2].menuTitle;
+const moraineLake = ImageList[3].menuTitle;
 
 const settings = {
   slidingDuration: 500,

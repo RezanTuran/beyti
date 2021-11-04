@@ -4,10 +4,10 @@ import heroVideo from '../../assets/backgroundVideo.mp4';
 import { Grid, useMediaQuery } from '@material-ui/core';
 //import useStyles from './styles';
 import RestaurantInfo from '../../components/restaurant-info';
-import mobileBack from '../../assets/mobile.jpg';
+import ZoomSlide from '../../components/ZoomSlider/ZoomSlider';
 
 const Home = () => {
-  const isMobile = useMediaQuery('(min-width:600px)');
+  const isMobile = useMediaQuery('(min-width:991px)');
 
   //const classes = useStyles();
   return (
@@ -23,13 +23,9 @@ const Home = () => {
           width="100%"
         />
       ) : (
-        <Grid
-          style={{
-            backgroundImage: `url(${mobileBack})`,
-            height: '100vh',
-            backgroundSize: 'cover',
-          }}
-        ></Grid>
+        <Grid>
+          <ZoomSlide />
+        </Grid>
       )}
       <RestaurantInfo />
     </Grid>
