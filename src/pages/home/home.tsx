@@ -23,9 +23,7 @@ const Home = () => {
           width="100%"
         />
       ) : (
-        <Grid>
-          <ZoomSlide />
-        </Grid>
+        <ZoomSlide />
       )}
       <RestaurantInfo />
     </Grid>

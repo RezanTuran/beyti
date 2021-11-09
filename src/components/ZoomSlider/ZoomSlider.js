@@ -3,10 +3,10 @@ import HeroSlider, { Slide, Nav } from 'hero-slider';
 import ImageList from './imageList';
 
 // Images
-const hallstatt = ImageList[0].menuTitle;
-const hvitserkur = ImageList[1].menuTitle;
-const jacksonville = ImageList[2].menuTitle;
-const moraineLake = ImageList[3].menuTitle;
+const restaurantImage1 = ImageList[0].menuTitle;
+const restaurantImage2 = ImageList[1].menuTitle;
+const foodImage1 = ImageList[2].menuTitle;
+const foodImage2 = ImageList[3].menuTitle;
 
 const settings = {
   slidingDuration: 500,
@@ -28,17 +28,15 @@ const app = () => {
       settings={{ ...settings }}
     >
       <Slide
-        navDescription="Hallstatt - Austria"
         background={{
-          backgroundImage: hallstatt,
+          backgroundImage: restaurantImage1,
           backgroundAnimation: 'zoom',
         }}
       />
 
       <Slide
-        navDescription="Hvitserkur - Iceland"
         background={{
-          backgroundImage: hvitserkur,
+          backgroundImage: restaurantImage2,
           backgroundAnimation: 'zoom',
         }}
       />
@@ -46,19 +44,17 @@ const app = () => {
       <Slide
         navDescription="Jacksonville - USA"
         background={{
-          backgroundImage: jacksonville,
+          backgroundImage: foodImage1,
           backgroundAnimation: 'zoom',
         }}
       />
 
       <Slide
-        navDescription="Moraine Lake - Canada"
         background={{
-          backgroundImage: moraineLake,
+          backgroundImage: foodImage2,
           backgroundAnimation: 'zoom',
         }}
       />
-
       <Nav />
     </HeroSlider>
   );
