@@ -14,7 +14,6 @@ export default makeStyles(() => ({
     width: '70%',
   },
   infoBox: {
-    height: '50vh',
     width: '100%',
   },
   title: {
@@ -39,8 +38,8 @@ export default makeStyles(() => ({
     fontWeight: 'bold',
   },
   imgBox: {
-    height: '50vh',
     width: '100%',
+    marginTop: '2em',
   },
   img: {
     width: '100%',
